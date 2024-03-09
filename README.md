@@ -54,12 +54,16 @@ Aqui marco cual es Margen automatico y lo maximo a lo que se expande el texto de
 
 
 En la siguiente imagen le doy forma a la ID historia, le digo el espacio de pantalla que quiero que ocupe y mediante "background-image: linear-gradient" hago que esta seccion tenga una imagen de fondo y que sobre esta seproyecte una sobra de manera que sea más oscura y se pueda leer con mayor facilidad el texto que hay sobre la imagen. Esta misma fórmula la he aplicado para poner fotos de fondo en las otras paginas y en esta más adelante.
+
 ![alt text](./DocumentacionCss/image-6.png)
 
 En la siguiente imagen mediante la etiqueta "Lista" y sus respectivos "Child" he asignado las Backgrauns-image a los elementos de dicha clase.
+
 ![alt text](./DocumentacionCss/image-7.png)
 
-Para finalixar con este Css tenemos el footer y las media query usadas.
+
+Para finalizar con este Css tenemos el footer y las media query usadas.
+
 ![alt text](./DocumentacionCss/image-8.png)
 
 
