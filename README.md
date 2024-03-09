@@ -49,9 +49,11 @@ Para terminar con el header le he dado estilo y forma a la barra de navegación 
 ![alt text](./DocumentacionCss/image-2.png)
 
 Como se puede observar en la siguiente imagen he marcado como quiero que sean mis h y mis párrafos y he diseñado como quiero que se vean mis botones.
+
 ![alt text](./DocumentacionCss/image-3.png)
 
 Aqui marco cual es Margen automatico y lo maximo a lo que se expande el texto del contenido de la clase seleccionada.
+
 ![alt text](./DocumentacionCss/image-5.png)
 
 
@@ -87,7 +89,9 @@ He creado una clase por cada foto. Antes de probar esto he probado a hacer una l
 
 ## Scripts
 Este script es bastante simple lo que hace es cambiar el nombre del boton al pulsarlo y procede a cambiar el color de fondo de la página, luego comprueba si ha cambiado y si es así al darle al botón de nuevo vuelve a cambiar.
+
 - [CambioDeColor](./Js/CmbioColorWeb.js)
+- 
 ![alt text](./documentacionScripts/image.png)
 
 
