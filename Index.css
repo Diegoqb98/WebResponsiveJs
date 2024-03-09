@@ -1,0 +1,208 @@
+/*Version de la Web en tamaño reducido*/
+
+
+/*Los elementos no creceran mas allá del limite que yo les de*/
+*{
+    box-sizing: border-box;}
+/*Seleccionamos el tipo de letra del body y le ponemos margen 0*/
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+/*   HEADER SECTION    */
+
+
+/*Color de fondo del header*/
+header{
+    background-color: black;
+}
+/*Estilo de la etiqueta logo*/
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: red;
+    font-size: 1.9em;
+}
+/**/
+header .Contenido_No_Fijo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Estilo de los elementos de navegacion*/
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+/*Separacion de los enlaces y estilo de los mismos*/
+header a{
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: yellow;
+    
+}
+/*Cambio de color de los enlaces al pasar el cursor*/
+header a:hover{
+    color: white;
+}
+
+
+/*   END HEADER SECTION    */
+
+
+/*Damos tamaño a los h1*/
+h1{ font-size: 3em;}
+/*Damos tamaño a los h2*/
+h2{ font-size: 2.2em;}
+/*Damos tamaño a los h3*/
+h3{ font-size: 1.7em;}
+/*Damos tamaño a los p*/
+p{ font-size: 1.2em;}
+
+/*Estilo de los botones*/
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(1,1,1.0);
+    box-shadow: 2px 2px 10px rgba(1,1,1.0);
+    color: black;
+    background-color: yellow;
+}
+
+/*Cambio de color al pasar el cursor por encima de los botones*/
+button:hover{
+    background-color: gray;
+}
+/*Margen automatico y lo maximo a lo que se expande el texto del contenido de la clase deleccionada*/
+.Contenido_No_Fijo{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+#histoia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-color: black;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Fotos/HistoriaVideojuegos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#historia h1{
+    color: black;
+}
+
+#videojuegos-historicos{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#videojuegos-historicos.Contenido_No_Fijo{
+    padding: 200px 12px;
+}
+
+#videojuegos-historicos p{
+    display: none;
+}
+
+#videojuegos-historicos .Lista{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 22px;
+    border-radius: 15px;
+}
+
+/*linearGradient hace que el texto sobre la imagen quede mejor*/
+.Lista:first-child{   
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(Fotos/Pong.jpg);
+}
+
+.Lista:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(Fotos/Tetris.jpg);
+}
+
+.Lista:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(Fotos/Mario.jpg);
+}
+
+.Lista:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(Fotos/Street.jpg);
+}
+
+footer{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    color: white;
+
+}
+    
+
+/*Para que sea responsive y se modifique cuando el tamaño de la pantalla sea mayor al indicado, es decir, 
+en este caso es la version de la Web en tamaño grande*/
+
+@media screen and (min-width: 720px){
+    /*El header se mantiene arriba mientras bajamos por la pagina*/
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .Contenido_No_Fijo{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    
+}

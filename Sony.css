@@ -1,0 +1,215 @@
+/*Los elementos no creceran mas allá del limite que yo les de*/
+*{
+    box-sizing: border-box;
+}
+
+/*Seleccionamos el tipo de letra del body y le ponemos margen 0*/
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+/*Damos tamaño a los h1*/
+h1{ font-size: 3em;}
+/*Damos tamaño a los h2*/
+h2{ font-size: 2.2em;}
+/*Damos tamaño a los h3*/
+h3{ font-size: 1.7em;}
+/*Damos tamaño a los p*/
+p{ 
+    font-size: 1.2em;
+    max-width: 1400px;
+}
+
+
+/*Margen automatico y lo maximo a lo que se expande el texto del contenido de la clase deleccionada*/
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+/*Color de fondo del header*/
+header{
+    background-color: darkblue;
+}
+/*Estilo de la etiqueta logo*/
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.9em;
+}
+/**/
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Estilo de los elementos de navegacion*/
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+/*Separacion de los enlaces y estilo de los mismos*/
+header a{
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+/*Cambio de color de los enlaces al pasar el cursor*/
+header a:hover{
+    color: black;
+}
+
+#Inicios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("FotosPs/Playstation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Inicios h1{
+    color: white;
+}
+
+#Consolas-Populares{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#Consolas-Populares h2{
+    color: red;
+    font-weight: bold;
+}
+#Consolas-Populares.contenedor{
+    padding: 200px 12px;
+}
+
+#Consolas-Populares p{
+    display:inline;
+}
+
+#Consolas-Populares .consola{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 22px;
+    border-radius: 15px;
+}
+
+.consola:first-child{
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(FotosPs/PS1.jpg);
+}
+
+.consola:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(FotosPs/PS2.jpg);
+}
+
+.consola:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(FotosPs/PS3.jpg);
+}
+
+.consola:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(FotosPs/PS4.jpg);
+}
+
+.consola:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(FotosPs/PS5.jpg);
+}
+
+footer{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    color: white;
+
+}
+#formulario{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    color: white;
+}
+form .Enviar{
+    color:black;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+form #Opinion{
+    width: 400px;
+}
+
+form p{
+    color: white;
+}
+
+@media screen and (min-width: 720px){
+    /*El header se mantiene arriba mientras bajamos por la pagina*/
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    
+}
