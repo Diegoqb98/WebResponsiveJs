@@ -44,6 +44,8 @@ A continuacion diseño como quiero que se vea el logo de la Web y selecciono el 
 ![alt text](./DocumentacionCss/image-1.png)
 
 Para terminar con el header le he dado estilo y forma a la barra de navegación y he implementado hover a las "a" es decir los enlaces para que cambien de color al pasar el cursor por encima.
+
+
 ![alt text](./DocumentacionCss/image-2.png)
 
 Como se puede observar en la siguiente imagen he marcado como quiero que sean mis h y mis párrafos y he diseñado como quiero que se vean mis botones.
